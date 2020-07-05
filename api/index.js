@@ -18,7 +18,8 @@ const metascraper = require('metascraper').load([
 	require('metascraper-amazon')(),
 	require('metascraper-youtube')(),
 	require('metascraper-soundcloud')(),
-	require('metascraper-video-provider')()
+	require('metascraper-video')(),
+	require('metascraper-video-provider')(),
 ])
 
 
