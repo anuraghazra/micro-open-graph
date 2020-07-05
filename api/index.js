@@ -8,11 +8,10 @@ const metascraperDescription = require('metascraper-description');
 const metascraperImage = require('metascraper-image');
 const metascraperLogo = require('metascraper-logo');
 const metascraperClearbit = require('metascraper-clearbit-logo');
-const metascraperLogo = require('metascraper-logo-favicon');
+const metascraperLogoFavicon = require('metascraper-logo-favicon');
 const metascraperPublisher = require('metascraper-publisher');
 const metascraperTitle = require('metascraper-title');
 const metascraperUrl = require('metascraper-url');
-const metascraperLogo = require('metascraper-logo-favicon');
 const metascraperAmazon = require('metascraper-amazon');
 const metascraperYoutube = require('metascraper-youtube');
 const metascraperSoundcloud = require('metascraper-soundcloud');
@@ -24,11 +23,10 @@ const metascraper = require('metascraper').load([
   metascraperImage(),
   metascraperLogo(),
   metascraperClearbit(),
-  metascraperLogo(),
+  metascraperLogoFavicon(),
   metascraperPublisher(),
   metascraperTitle(),
   metascraperUrl(),
-  metascraperLogo(),
   metascraperAmazon(),
   metascraperYoutube(),
   metascraperSoundcloud()
