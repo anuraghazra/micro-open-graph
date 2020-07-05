@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*')
 
   const { query: { url } } = parse(req.url, true)
-  if (!url) return req.status(400).send({ message: 'Please supply an URL to be scraped in the url query parameter.' })
+  if (!url) return res.status(400).send({ message: 'Please supply an URL to be scraped in the url query parameter.' })
 
   const cachedResult = cache.get(url)
   if (cachedResult) return res.status(200).send(cachedResult)
@@ -42,7 +42,7 @@ module.exports = async (req, res) => {
     data = { message: `Scraping the open graph data from "${url}" failed.`, suggestion: 'Make sure your URL is correct and the webpage has open graph data, meta tags or twitter card data.' }
   }
 
-  req.status(statusCode).send(data)
+  res.status(statusCode).send(data)
   // Cache results for 24 hours
   cache.put(url, data, TWENTY_FOUR_HOURS)
 }
