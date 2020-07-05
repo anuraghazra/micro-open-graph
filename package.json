@@ -4,7 +4,6 @@
   "description": "A tiny Node.js microservice to scrape open graph data with joy.",
   "main": "index.js",
   "scripts": {
-    "start": "micro",
     "dev": "micro-dev",
     "test": "standard"
   },
