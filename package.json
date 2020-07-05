@@ -16,7 +16,7 @@
   "dependencies": {
     "got": "^8.3.2",
     "memory-cache": "^0.1.6",
-    "metascraper": "^3.11.8",
+    "metascraper": "^5.12.6",
     "metascraper-amazon": "^3.13.0",
     "metascraper-author": "^5.11.21",
     "metascraper-clearbit-logo": "^3.13.0",
